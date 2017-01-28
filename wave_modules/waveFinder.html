@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script>
+    var discoveredDevices = [];
+    function waveFinder() {
+      for (i = 1; i < 254; i++) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+          console.log(xmlHttp.responseText);
+          discoveredDevices.push(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", "http://192.168.1."+i+":3005/api/discover/?rand="+Date.now(), true); // true for asynchronous
+        xmlHttp.send(null);
+      }
+      console.log(discoveredDevices);
+    }
+    </script>
+  </head>
+</html>
