@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html, body {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.app {
+  margin-left: 10px;
+}
+.header {
+  margin-bottom: 10px;
+  background-color: #3498db;
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  height: 25px;
+}
+.material-icons, .devicename {
+  vertical-align: middle;
+  display: inline-block;
+}
+.pagename {
+  font-size: 35px;
+}
+.commandbox {
+  width: 500px;
+}
