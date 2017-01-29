@@ -9,7 +9,7 @@ function waveFinder() {
       if (data.device == "WaveDevice") {
         discoveredDevices.push(data);
         var posn = discoveredDevices.length -1;
-        $(".devices").append("<div class='device' onclick='connect("+posn+");' ><i class='material-icons'>speaker</i><div class='devicename'>"+data.name+"</div></div>");
+        $(".devices").append("<div class='device' onclick='connect("+posn+");' ><i class='material-icons'>speaker</i><div class='devicename'>"+data.name+"</div><div class='deviceip'>"+data.ip+"</div></div>");
       }
     });
   }

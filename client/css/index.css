@@ -20,7 +20,7 @@ html, body {
   padding-left: 25px;
   height: 25px;
 }
-.material-icons, .devicename {
+.material-icons, .devicename, .scantext, .deviceip {
   vertical-align: middle;
   display: inline-block;
 }
@@ -29,4 +29,14 @@ html, body {
 }
 .commandbox {
   width: 500px;
+}
+.mscan, .scantext {
+  font-size: 24px;
+}
+.devices {
+  min-height: 250px;
+}
+.deviceip {
+  color: #95a5a6;
+  padding-left: 10px;
 }
