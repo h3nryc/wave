@@ -15,6 +15,10 @@
   ],
   "dependencies": {
     "express": "^4.14.0",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "player": "^0.6.1",
+    "sc-stream": "^1.0.0",
+    "soundcloud": "^3.1.2",
+    "soundcloud-audio": "^1.1.0"
   }
 }
